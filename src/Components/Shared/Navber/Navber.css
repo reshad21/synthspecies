@@ -1,0 +1,18 @@
+.navbar {
+    overflow-x: auto;
+    background-color: #102027;
+    white-space: nowrap;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #29434e;
+}
