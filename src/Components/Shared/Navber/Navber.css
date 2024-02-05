@@ -16,3 +16,7 @@
 .navbar a:hover {
     background-color: #29434e;
 }
+
+.active {
+    background-color: #29434e;
+}
