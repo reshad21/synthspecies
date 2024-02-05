@@ -1,11 +1,19 @@
+/* Navber.css */
+
+.hidden {
+    display: none;
+}
+
 .navbar {
     overflow-x: auto;
     background-color: #102027;
     white-space: nowrap;
+    position: relative;
+    /* Added position: relative; for indicator positioning */
 }
 
 .navbar a {
-    display: inline-block;
+    display: block;
     padding: 14px 16px;
     text-decoration: none;
     color: white;
@@ -13,10 +21,28 @@
     transition: background-color 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.active {
     background-color: #29434e;
 }
 
-.active {
-    background-color: #29434e;
+.indicator {
+    height: 4px;
+    background-color: #005cb2;
+    position: absolute;
+    bottom: 0;
+    transition: left 0.3s, width 0.3s;
+}
+
+/* Additional mobile styles */
+@media (max-width: 767px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        display: inline-block;
+        /* width: 100%; */
+        box-sizing: border-box;
+    }
 }
