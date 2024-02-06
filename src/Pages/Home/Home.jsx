@@ -3,6 +3,7 @@ import FeatureComparison from '../../Components/Home/FeatureSection/FeatureCompa
 import Hero from '../../Components/Home/Hero';
 import IntroButton from '../../Components/Home/Introbutton';
 import Introduction from '../../Components/Home/Introduction';
+import Resources from '../../Components/Home/ResourcesSection/Resources';
 import WhyGoSynth from './../../Components/Home/GoSynthSection/WhyGoSynth';
 import Navber from './../../Components/Shared/Navber/Navber';
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
                 <IntroButton />
                 <WhyGoSynth />
                 <FeatureComparison />
+                <Resources />
             </>
         </div>
     );
