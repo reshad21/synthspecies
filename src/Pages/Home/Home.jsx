@@ -1,4 +1,5 @@
 import React from 'react';
+import FeatureComparison from '../../Components/Home/FeatureComparison';
 import Hero from '../../Components/Home/Hero';
 import IntroButton from '../../Components/Home/Introbutton';
 import Introduction from '../../Components/Home/Introduction';
@@ -13,6 +14,7 @@ const Home = () => {
                 <Introduction />
                 <IntroButton />
                 <WhyGoSynth />
+                <FeatureComparison />
             </>
         </div>
     );
