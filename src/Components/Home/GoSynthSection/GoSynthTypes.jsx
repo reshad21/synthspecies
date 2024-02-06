@@ -1,10 +1,10 @@
 import React from 'react';
-import fullyModular from '../../assets/fully_moduler.png';
-import openSource from '../../assets/open_source.png';
-import penumaticMucles from '../../assets/penumatic_mucles.png';
-import personalNineties from '../../assets/personal_nanities.png';
-import sopisticatedSensor from '../../assets/sopisticated_sensor.png';
-import wirelessCharging from '../../assets/wireless_charging.png';
+import fullyModular from '../../../assets/fully_moduler.png';
+import openSource from '../../../assets/open_source.png';
+import penumaticMucles from '../../../assets/penumatic_mucles.png';
+import personalNineties from '../../../assets/personal_nanities.png';
+import sopisticatedSensor from '../../../assets/sopisticated_sensor.png';
+import wirelessCharging from '../../../assets/wireless_charging.png';
 const GoSynthTypes = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>

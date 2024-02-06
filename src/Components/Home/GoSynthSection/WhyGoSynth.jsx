@@ -1,5 +1,5 @@
 import React from 'react';
-import gosynth from '../../assets/go-synth.jpg';
+import gosynth from '../../../assets/go-synth.jpg';
 import GoSynthTypes from './GoSynthTypes';
 const WhyGoSynth = () => {
     return (
