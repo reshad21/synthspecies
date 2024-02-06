@@ -1,5 +1,5 @@
 import React from 'react';
-import FeatureComparison from '../../Components/Home/FeatureComparison';
+import FeatureComparison from '../../Components/Home/FeatureSection/FeatureComparison';
 import Hero from '../../Components/Home/Hero';
 import IntroButton from '../../Components/Home/Introbutton';
 import Introduction from '../../Components/Home/Introduction';
