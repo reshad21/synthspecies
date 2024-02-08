@@ -4,7 +4,7 @@ import ResourcesTypes from './ResourcesTypes';
 
 const Resources = () => {
     return (
-        <div className='mx-auto max-w-5xl'>
+        <div className='mx-auto max-w-5xl' id='Resources'>
             <ResourcesTypes />
             <ResourceCommunity />
         </div>

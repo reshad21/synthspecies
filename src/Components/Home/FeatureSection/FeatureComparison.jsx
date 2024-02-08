@@ -5,7 +5,7 @@ import FeatureTable from './FeatureTable';
 
 const FeatureComparison = () => {
     return (
-        <div className='max-w-5xl mx-auto'>
+        <div className='max-w-5xl mx-auto' id='Features'>
             <FeatureIntro />
             <FeatureTable />
             <FeatureMessage />

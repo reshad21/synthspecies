@@ -23,34 +23,36 @@ const Navber = () => {
 
     return (
         <>
-            <div className='hidden md:block bg-[#102027]'>
+            <div className='hidden md:block bg-[#102027] sticky top-0 left-0 z-40'>
                 <ul className='flex justify-between items-center mx-auto md:max-w-7xl'>
                     <li className='hidden md:block'><img src={navimage} alt="" /></li>
                     <li className={`flex-1 ${activeLink === 0 ? 'active' : ''}`}>
-                        <a href='#' onClick={() => handleLinkClick(0)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Introduction</a>
+                        <a href='#Introduction' onClick={() => handleLinkClick(0)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Introduction</a>
                     </li>
                     <li className={`flex-1 ${activeLink === 1 ? 'active' : ''}`}>
-                        <a href="#" onClick={() => handleLinkClick(1)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Why Go Synth?</a>
+                        <a href="#goSynth" onClick={() => handleLinkClick(1)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Why Go Synth?</a>
                     </li>
                     <li className={`flex-1 ${activeLink === 2 ? 'active' : ''}`}>
-                        <a href="#" onClick={() => handleLinkClick(2)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Features</a>
+                        <a href="#Features" onClick={() => handleLinkClick(2)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Features</a>
                     </li>
                     <li className={`flex-1 ${activeLink === 3 ? 'active' : ''}`}>
-                        <a href="#" onClick={() => handleLinkClick(3)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Resources</a>
+                        <a href="#Resources" onClick={() => handleLinkClick(3)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Resources</a>
                     </li>
                     <li className={`flex-1 ${activeLink === 4 ? 'active' : ''}`}>
-                        <a href="#" onClick={() => handleLinkClick(4)} className='text-center py-3 block text-xl font-normal text-white bg-[#005cb2]'>Join the Revolution</a>
+                        <a href="#JointheRevolution" onClick={() => handleLinkClick(4)} className='text-center py-3 block text-xl font-normal text-white bg-[#005cb2]'>Join the Revolution</a>
                     </li>
                     <li className='hidden md:block'><img src={navimage} alt="" /></li>
+                    {/* Indicator rendered here */}
+                    <div className="indicator" style={getIndicatorStyle()}></div>
                 </ul>
             </div>
 
-            <div className="navbar md:hidden block">
-                <a href="#" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? 'active' : ''}>Introduction</a>
-                <a href="#" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? 'active' : ''}>Why Go Synth?</a>
-                <a href="#" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? 'active' : ''}>Features</a>
-                <a href="#" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? 'active' : ''}>Resources</a>
-                <a href="#" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? 'active' : ''}>Join the Revolution</a>
+            <div className="navbar md:hidden block sticky top-0 left-0 z-40">
+                <a href="#Introduction" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? 'active' : ''}>Introduction</a>
+                <a href="#goSynth" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? 'active' : ''}>Why Go Synth?</a>
+                <a href="#Features" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? 'active' : ''}>Features</a>
+                <a href="#Resources" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? 'active' : ''}>Resources</a>
+                <a href="#JointheRevolution" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? 'active' : ''}>Join the Revolution</a>
                 <div className="indicator" style={getIndicatorStyle()}></div>
             </div>
 
