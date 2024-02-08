@@ -1,4 +1,7 @@
 /* Navber.css */
+.active {
+    background-color: #29434e;
+}
 
 .hidden {
     display: none;
