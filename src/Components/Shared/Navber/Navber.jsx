@@ -46,11 +46,14 @@ const Navber = () => {
             </div>
 
             <div className="navbar md:hidden block">
-                {['Introduction', 'Why Go Synth?', 'Features', 'Resources', 'Join the Revolution'].map((text, index) => (
-                    <a key={index} href="#" onClick={() => handleLinkClick(index)} className={activeLink === index ? 'active' : ''}>{text}</a>
-                ))}
+                <a href="#" onClick={() => handleLinkClick(0)} className={activeLink === 0 ? 'active' : ''}>Introduction</a>
+                <a href="#" onClick={() => handleLinkClick(1)} className={activeLink === 1 ? 'active' : ''}>Why Go Synth?</a>
+                <a href="#" onClick={() => handleLinkClick(2)} className={activeLink === 2 ? 'active' : ''}>Features</a>
+                <a href="#" onClick={() => handleLinkClick(3)} className={activeLink === 3 ? 'active' : ''}>Resources</a>
+                <a href="#" onClick={() => handleLinkClick(4)} className={activeLink === 4 ? 'active' : ''}>Join the Revolution</a>
                 <div className="indicator" style={getIndicatorStyle()}></div>
             </div>
+
         </>
     );
 };
