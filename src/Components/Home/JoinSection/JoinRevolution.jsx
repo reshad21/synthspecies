@@ -1,13 +1,13 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { useSmoothNavber } from '../../../Context/NavberProvider';
 import CommunityProject from './CommunityProject';
 import Disclaimer from './Disclaimer';
 import JoinButton from './JoinButton';
 
 const JoinRevolution = () => {
-    const { ref } = useSmoothNavber()
+    const { Revolution } = useSmoothNavber()
     return (
-        <div className='mx-auto max-w-5xl' id='JointheRevolution' ref={ref}>
+        <div className='mx-auto max-w-5xl' id='JointheRevolution' ref={Revolution}>
             <JoinButton />
             <CommunityProject />
             <Disclaimer />
@@ -15,4 +15,4 @@ const JoinRevolution = () => {
     );
 };
 
-export default forwardRef(JoinRevolution);
+export default JoinRevolution;

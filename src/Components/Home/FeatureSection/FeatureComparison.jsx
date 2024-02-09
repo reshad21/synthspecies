@@ -1,13 +1,13 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { useSmoothNavber } from '../../../Context/NavberProvider';
 import FeatureIntro from './FeatureIntro';
 import FeatureMessage from './FeatureMessage';
 import FeatureTable from './FeatureTable';
 
 const FeatureComparison = () => {
-    const { ref } = useSmoothNavber()
+    const { Features } = useSmoothNavber()
     return (
-        <div className='max-w-5xl mx-auto' id='Features' ref={ref}>
+        <div className='max-w-5xl mx-auto' id='Features' ref={Features}>
             <FeatureIntro />
             <FeatureTable />
             <FeatureMessage />
@@ -15,4 +15,4 @@ const FeatureComparison = () => {
     );
 };
 
-export default forwardRef(FeatureComparison);
+export default FeatureComparison;

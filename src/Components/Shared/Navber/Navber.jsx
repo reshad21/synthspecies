@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useSmoothNavber } from '../../../Context/NavberProvider';
 import navimage from '../../../assets/navber.png';
 import './Navber.css';
 
 const Navber = () => {
-    const { handleClick, activeLink } = useSmoothNavber()
+    const { handleClick, activeLink, Introduction, goSynth, Features, Resources, Revolution, scrollHandler } = useSmoothNavber()
+
+
 
     return (
         <>
             <div className='hidden md:block bg-[#102027] sticky top-0 left-0 bottom-0 right-0 z-40 clear-both'>
                 <ul className='flex justify-between items-center mx-auto md:max-w-7xl'>
-                    <li className='hidden md:block'><img src={navimage} alt="" /></li>
+                    {/* <li className='hidden md:block'><img src={navimage} alt="" /></li>
                     <li className={`flex-1 ${activeLink === 0 ? 'active' : ''}`}>
-                        {/* <a href='#Introduction' onClick={() => handleLinkClick(0)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Introduction</a> */}
                         <Link to="#" onClick={() => handleClick(0)} className='text-center py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>Introduction</Link>
                     </li>
                     <li className={`flex-1 ${activeLink === 1 ? 'active' : ''}`}>
@@ -28,18 +28,24 @@ const Navber = () => {
                     <li className={`flex-1 ${activeLink === 4 ? 'active' : ''}`}>
                         <Link to="#" onClick={() => handleClick(4)} className='text-center py-3 block text-xl font-normal text-white bg-[#005cb2]'>Join the Revolution</Link>
                     </li>
+                    <li className='hidden md:block'><img src={navimage} alt="" /></li> */}
                     <li className='hidden md:block'><img src={navimage} alt="" /></li>
-                    {/* Indicator rendered here */}
+                    <li onClick={() => scrollHandler(Introduction)} className='text-center cursor-pointer py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>introduction1</li>
+                    <li onClick={() => scrollHandler(goSynth)} className='text-center cursor-pointer py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>introduction2</li>
+                    <li onClick={() => scrollHandler(Features)} className='text-center cursor-pointer py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>introduction3</li>
+                    <li onClick={() => scrollHandler(Resources)} className='text-center cursor-pointer py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>introduction4</li>
+                    <li onClick={() => scrollHandler(Revolution)} className='text-center cursor-pointer py-3 block text-xl font-normal text-white hover:bg-[#29434e]'>introduction5</li>
+                    <li className='hidden md:block'><img src={navimage} alt="" /></li>
                 </ul>
             </div>
 
-            <div className="navbar md:hidden block sticky top-0 left-0 z-40">
+            {/* <div className="navbar md:hidden block sticky top-0 left-0 z-40">
                 <a href="#Introduction" onClick={() => handleClick(0)} className={activeLink === 0 ? 'active' : ''}>Introduction</a>
                 <a href="#goSynth" onClick={() => handleClick(1)} className={activeLink === 1 ? 'active' : ''}>Why Go Synth?</a>
                 <a href="#Features" onClick={() => handleClick(2)} className={activeLink === 2 ? 'active' : ''}>Features</a>
                 <a href="#Resources" onClick={() => handleClick(3)} className={activeLink === 3 ? 'active' : ''}>Resources</a>
                 <a href="#JointheRevolution" onClick={() => handleClick(4)} className={activeLink === 4 ? 'active' : ''}>Join the Revolution</a>
-            </div>
+            </div> */}
 
         </>
     );
