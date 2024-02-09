@@ -14,8 +14,11 @@ const NavberProvider = ({ children }) => {
 
     const scrollHandler = (eleRef, index) => {
         console.log(eleRef.current, typeof (index));
-        eleRef?.current?.scrollIntoView({ behavior: 'smooth' });
-        setActiveLink(index);
+        if (eleRef && eleRef.current) {
+            const offsetTop = eleRef.current.offsetTop - 47; // Maintain a fixed 60px gap from top
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            setActiveLink(index);
+        }
     }
 
     const value = { activeLink, setActiveLink, scrollHandler, Introduction, goSynth, Features, Resources, Revolution };
