@@ -1,5 +1,6 @@
 import { RouterProvider } from 'react-router-dom';
 import './App.css';
+import NavberProvider from './Context/NavberProvider';
 import router from './Routes/router';
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
   return (
     <>
       <div className='bg-primary min-h-full'>
-        <RouterProvider router={router} />
+        <NavberProvider>
+          <RouterProvider router={router} />
+        </NavberProvider>
       </div>
     </>
   )
