@@ -23,7 +23,7 @@ const Navber = () => {
 
     return (
         <>
-            <div className='hidden md:block bg-[#102027] sticky top-0 left-0 z-40'>
+            <div className='hidden md:block bg-[#102027] sticky top-0 left-0 bottom-0 right-0 z-40 clear-both'>
                 <ul className='flex justify-between items-center mx-auto md:max-w-7xl'>
                     <li className='hidden md:block'><img src={navimage} alt="" /></li>
                     <li className={`flex-1 ${activeLink === 0 ? 'active' : ''}`}>
