@@ -9,18 +9,16 @@ import WhyGoSynth from './../../Components/Home/GoSynthSection/WhyGoSynth';
 import Navber from './../../Components/Shared/Navber/Navber';
 const Home = () => {
     return (
-        <div>
-            <>
-                <Hero />
-                <Navber />
-                <Introduction />
-                <IntroButton />
-                <WhyGoSynth />
-                <FeatureComparison />
-                <Resources />
-                <JoinRevolution />
-            </>
-        </div>
+        <>
+            <Hero />
+            <Navber />
+            <Introduction />
+            <IntroButton />
+            <WhyGoSynth />
+            <FeatureComparison />
+            <Resources />
+            <JoinRevolution />
+        </>
     );
 };
 
